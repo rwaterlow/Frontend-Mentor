@@ -1,0 +1,28 @@
+/* =============================== */
+
+/* Layout - Reusable layout blocks */
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    @media only screen and (min-width: breakpoint(sm)) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.col {
+    flex: 1;
+    margin-bottom: 1.5rem;
+
+    @media only screen and (min-width: breakpoint(sm)) {
+        margin: 1.5rem;
+    }
+}
+
+/* END Layout */

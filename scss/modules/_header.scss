@@ -1,0 +1,26 @@
+/* ================================================================== */
+
+/* Site Header - Styles for all elements within the main header block */
+
+.site-header {
+    margin: 5rem auto;
+    text-align: center;
+
+    @media only screen and (min-width: breakpoint(sm)) {
+        max-width: 33vw;
+    }
+}
+
+.site-title {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: initial;
+
+    span {
+        display: block;
+        font-weight: 600;
+    }
+}
+
+/* END Site Header */

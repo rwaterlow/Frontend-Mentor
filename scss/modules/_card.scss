@@ -1,0 +1,55 @@
+/* ================================= */
+/* Card - Reusable card block styles */
+.card {
+    padding: 2rem;
+    font-size: .875rem;
+    border-top: 4px solid #000;
+    border-radius: .5rem;
+    box-shadow: 0 0 1.5rem -.5rem rgba(#000, .5);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+
+    &-title {
+        color: $clr-very-dark-blue;
+        margin-bottom: .5rem;
+    }
+
+    &-img {
+        max-height: 3.5rem;
+        margin-top: 1.5rem;
+        margin-left: auto;
+    }
+
+    @media only screen and (min-width: breakpoint(sm)) {
+        min-height: 14vw;
+    }
+}
+
+.card+.card {
+    margin-top: 1.5rem;
+
+    @media only screen and (min-width: breakpoint(sm)) {
+        margin-top: 3rem;
+    }
+}
+
+.card--clr-cyan {
+    border-color: $clr-cyan;
+}
+
+.card--clr-red {
+    border-color: $clr-red;
+}
+
+.card--clr-orange {
+    border-color: $clr-orange;
+}
+
+.card--clr-blue {
+    border-color: $clr-blue;
+}
+
+/* END Card */
